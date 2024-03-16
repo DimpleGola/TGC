@@ -149,6 +149,8 @@ a:hover{
     width: 100%;
 }
 
+
+
 .form1{
 
     transform: translateY(-150px);
@@ -157,6 +159,15 @@ a:hover{
 button{
     box-shadow: 5px 5px 10px #060000;
 }
+
+.banner_head>div>button:hover{
+
+    
+        background: hwb(232 1% 75%);
+        color: #ffffff;
+    
+    }
+
 
 
 .grcl {
@@ -266,6 +277,12 @@ button{
     transform: translateY(-50px);
 }
 
+
+.sponsers img:hover{
+
+    cursor: pointer;
+}
+
 .offer{
 
     background-color:#151948;
@@ -371,7 +388,7 @@ element.style {
 }
 
 .btn2 {
-    border: 2px solid hsl(210, 80%, 2%);
+    border: 2px solid hwb(232 1% 75%);
     border-radius: 10px;
     padding: 10px;
     font-size: 12px;
@@ -379,7 +396,13 @@ element.style {
     height: 60px;
     margin-top: 15px;
     font-family: sans-serif;
-    background: linear-gradient(to right, #9b87f6,#dee3ff)
+    background: linear-gradient(to right, rgb(225, 145, 7), rgba(225, 145, 7, 1));
+}
+
+.btn2:hover{
+    background: hwb(232 1% 75%);
+    color: #ffffff;
+
 }
 
 .courses{
@@ -431,9 +454,10 @@ element.style {
    
 
     color: #ffffff;
-    font-weight: 700;
-    font-size: 40px;
+   
     padding: 40px 0px;
+    font-size: 60px;
+    font-weight: 750;
 
     
 }
@@ -785,5 +809,17 @@ element.style {
     display: flex;
     padding-top: 20px;
     padding-left: 20px;
+
+}
+
+.breaker {
+    height: 200px;
+    background-color: #151948;
+  }
+  
+.fill_form .form1{
+
+    transform: translateY(-30px);
+
 
 }
