@@ -28,6 +28,8 @@ header{
 }
 .sponsers{
     background-color: rgb(33, 2, 41);
+    border: rounded;
+    transform: translateY(-50px);
 }
 .logo {
 
