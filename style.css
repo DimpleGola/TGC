@@ -22,14 +22,13 @@ header{
 
 .headd{
 
-   position: sticky;
+   position: static;
    top:0;
    border-bottom: 1px solid white;
+   z-index: 999;
 }
 .sponsers{
-    background-color: rgb(33, 2, 41);
-    border: rounded;
-    transform: translateY(-50px);
+    background-color: white;
 }
 .logo {
 
@@ -193,6 +192,9 @@ button{
 
     width: 100px;
     height: 100px;
+    border: 2px solid #151948;
+    border-radius: 50%;
+    padding: 5%;
 }
 
 
@@ -261,6 +263,7 @@ button{
 
 .sponsers{
     border: rounded;
+    transform: translateY(-50px);
 }
 
 .offer{
@@ -385,6 +388,18 @@ element.style {
 }
 
 
+.courses>div>div:hover{
+
+    /* box-shadow: 20px 20px 20px 20px 10px rgba(21, 25, 72, 1); */
+
+    /* box-shadow: 0px -25px 20px -20px #ffffff, -25px 0 20px -20px  #ffffff;}
+
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45);
+    box-shadow: 25px 20px 20px -20px rgba(0, 0, 0, 0.45); */
+
+    box-shadow: 0px 16px 48px 0px rgba(229, 149, 12, 1);}
+
+
 
 
 
@@ -437,7 +452,7 @@ element.style {
     padding: 10px 0px;
     font-family:sans-serif;
     /* box-shadow: 2px 10px 10px #fcfbfb88; */
-    outline: 1px solid lightgray;
+    outline: 1px solid rgb(203, 191, 11);
 
 
 }
@@ -462,13 +477,22 @@ element.style {
 
 .w:hover{
 
-    transform: rotateX(360deg);
-    transition: 2s ease all;
+    transform: translateX(10px);
+    transition: 1s ease all;
 
     
 }
 
+.b:hover{
 
+    transform: translateX(-10px);
+
+    /* COMBINED TRANSFORM AND TRANSITION
+    transform: rotate(45deg) scale(1.5) skew(45deg, 45deg) translate(50px, 80px); */
+    transition: 1s ease all;
+
+    
+}
 
 .b{
     background-color: #ffffff;
