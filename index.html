@@ -10,11 +10,71 @@
     <link rel="shortcut icon" href="Images\fav.webp" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/7a1fac52cb.js" crossorigin="anonymous"></script>
+
+ 
+    <!-- <style>
+        /* Define the keyframes for the animation */
+        @keyframes slide {
+            0% {
+                background-position: 0px -20px
+            }
+
+            50% {
+                background-position: -20px -50px;
+            }
+
+            75% {
+                background-position: -70px -50px;
+            }
+
+            100% {
+                background-position: 100px 70px;
+            }
+        }
+
+        /* Apply the animation to the alert */
+        .alert {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            animation: slide 3s linear infinite alternate;
+        }
+    </style> -->
+
+
+    <style>
+        /* Define the keyframes for the animation */
+        @keyframes slide {
+            0% {
+                background-position: 0px 0px;
+            }
+
+            50% {
+                background-position: 100% 0px;
+            }
+
+            100% {
+                background-position: 0px 0px;
+            }
+        }
+
+        /* Apply the animation to the alert */
+        .alert {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 200% 100%;
+            animation: slide 5s linear infinite;
+        }
+    </style>
+
+
+
+
+    <!-- starat::CARD_CAROUSEL:::CDN link -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
     
-
-
-
-
 
     <!-- CND link for BOOTSTRAP  -->
 
@@ -22,7 +82,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
-    <!-- CND link for BOOTSTRAP -->
+    <!-- CND link for FontAwesome -->
     <script src="https://kit.fontawesome.com/7a1fac52cb.js" crossorigin="anonymous"></script>
 
 
@@ -34,21 +94,66 @@
 
 <body>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    second
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-   <!-- push msg -->
-   <div class="alert alert-danger alert-dismissible fade show text-center mb-0" style="background:var(--rainbow);" role="alert">
-    <strong>HURRY!!!</strong><span style="font-size: 20px;">&nbsp; &nbsp; &nbsp; HOLI Special Offer**&nbsp;&nbsp;</span><span
-        class="badge rounded-pill text-bg-danger">20% DISCOUNT</span>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" style="z-index: 200;"
+        aria-labelledby="#exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-primary fs-5">
+                    You will be contacted soon by TGC Executive
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <button type="button" class="btn-close bg-transparent border" style="border: 2px solid black;" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-    
+
+    <!-- push msg -->
+ 
+
+    <div class="alert alert-danger alert-dismissible fade show text-center mb-0 pt-1 pb-1" role="alert">
+        <strong>HURRY!!!</strong><span style="font-size: 20px;">&nbsp; &nbsp; &nbsp; HOLI Special
+            Offer**&nbsp;&nbsp;</span><span class="badge rounded-pill text-bg-danger">20% DISCOUNT</span>
+        <button type="button" class="btn-close bg-transparent border" style="border: 2px solid black;"
+            data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+
 
 
     <section class="container-fluid banner" id="Home">
 
-        
+
 
         <header class="container-fluid headd ">
 
@@ -101,7 +206,7 @@
             </div>
         </header>
 
-     
+
 
         <div class="container">
             <div class="row d-flex">
@@ -119,10 +224,13 @@
 
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-warning  button_animate p-3 ps-4 pe-4" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-warning  button_animate p-3 ps-4 pe-4"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <span>APPLY NOW</span>
                         </button>
+
+
+
 
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -196,7 +304,7 @@
 
                     </div>
 
-                    <p class="fw-bolder fs-6">This year marks the completion of 5 years of TGC Animation as a leader
+                    <p class="fw-bolder fs-6">This year marks the completion of successful years of TGC Animation as a leader
                         in vocational training in
                         Multimedia Sector. TGC not only provides our students technical skills, but also empowers them
                         with
@@ -306,12 +414,13 @@
 
     <section style="height:450px;" class="container">
 
-        <div class="container-fluid courses text-white" >
+        <div class="container-fluid courses text-white">
             <div class="row text-center  justify-content-evenly">
                 <div class="col-3 border rounded  p-4 " id="courses" style="background-color:rgba(136, 118, 255, 1) ;">
                     <!-- <img src="Images\Images\3d.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Advanced Diploma in 3D Animation</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1>3D Animation</h1>
+                    <hr>
+                    <!-- <p style="line-height: 0.5px;"> Course Duration : 1 Year</p> -->
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -319,30 +428,21 @@
                     <!-- <button type="button" class="btn2">Get Free Details in 60 seconds</button>
 
                     Button trigger modal -->
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Get Free Details in 60 seconds</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#exampleModal3">Get Free
+                        Details in 60 seconds </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-primary fs-5" >
-        You will be contacted soon by TGC Executive
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+    Launch 
+  </button> -->
+
+
+
+
+
+                    <!-- <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -369,8 +469,9 @@
 
                 <div class="col-3 border rounded p-4" style="background-color:rgba(69, 130, 255, 1) ;">
                     <!-- <img src="Images\Images\animation.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Advanced Diploma in Web Designing</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1> Web Designing</h1>
+                    <hr>
+                    <!-- <p style="line-height: 0.5px;"> Course Duration : 1 Year</p> -->
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -380,8 +481,9 @@
 
                 <div class="col-3 border rounded p-4" style="background-color: rgba(245, 95, 110, 1);">
                     <!-- <img src="Images\Images\sketch.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Advanced Diploma in Sketching</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1>Advanced Sketching</h1>
+                    <hr>
+                    <!-- <p style="line-height: 0.5px;"> Course Duration : 1 Year</p> -->
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -389,10 +491,10 @@
                     <button class="btn2">Get Free Details in 60 seconds</button>
                 </div>
 
-                <div class="col-3 border rounded p-4 m-2 " style="background-color: rgba(245, 95, 110, 1);">
+                <div class="col-3 border rounded p-4 m-2 mt-5" style="background-color: rgba(245, 95, 110, 1);">
                     <!-- <img src="Images\Images\sketch.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Advanced Diploma in 3D Animation</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1>2D Animation</h1>
+                    <hr>
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -400,10 +502,11 @@
                     <button class="btn2">Get Free Details in 60 seconds</button>
                 </div>
 
-                <div class="col-3 border rounded p-4 m-2 " style="background-color:rgba(136, 118, 255, 1) ;">
+                <div class="col-3 border rounded p-4 m-2 mt-5" style="background-color:rgba(136, 118, 255, 1) ;">
                     <!-- <img src="Images\Images\uiux.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Advanced Diploma in UI/UX</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1> Advanced UI/UX</h1>
+                    <hr>
+                    <!-- <p style="line-height: 0.5px;"> Course Duration : 1 Year</p> -->
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -411,10 +514,11 @@
                     <button class="btn2">Get Free Details in 60 seconds</button>
                 </div>
 
-                <div class="col-3 border rounded p-4 m-2 " style="background-color:rgba(69, 130, 255, 1) ;">
+                <div class="col-3 border rounded p-4 m-2 mt-5" style="background-color:rgba(69, 130, 255, 1) ;">
                     <!-- <img src="Images\Images\weD.webp" width="100%" height="40%" class="border rounded mb-3"> -->
-                    <h2>Diploma in Web Programming</h2>
-                    <p style="line-height: 0.5px;"> Course Duration : 1 Year</p>
+                    <h1>Web Programing</h1>
+                    <hr>
+                    <!-- <p style="line-height: 0.5px;"> Course Duration : 1 Year</p> -->
                     <p>(Mode of Learning)</p>
                     <p style="line-height: 1px;">Offline, Online</p>
                     <p style="line-height: 1px;">Weekdays, Weekends</p>
@@ -431,7 +535,7 @@
 
     <section class="breaker container-fluid">
         hdjfhiwuefhwfnjf
-       
+
     </section>
 
 
@@ -567,7 +671,7 @@
         
        </section> -->
 
-       <section class="fill_form text-center">
+    <section class="fill_form text-center">
         <div class="container form1 ps-5 " id="Apply">
             <h1>Find Your Course. Apply Hurry Up!</h1>
             <div class="container d-flex gap-5 justify-content-center">
@@ -578,77 +682,73 @@
 
 
                 <button type="button" class="btn btn-warning  p-3 ps-4 pe-4" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                APPLY NOW
-            </button>
+                    data-bs-target="#exampleModal">
+                    APPLY NOW
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">TGC ANIMATION
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form  bg-transparesnt rounded p-3 text-warning"
-                                style="width: 350px;">
-                                <h2 class=" pt-4 text-left ">APPLY NOW</h2>
-                                <hr>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">TGC ANIMATION
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form  bg-transparesnt rounded p-3 text-warning" style="width: 350px;">
+                                    <h2 class=" pt-4 text-left ">APPLY NOW</h2>
+                                    <hr>
 
-                                <div class="mb-3">
+                                    <div class="mb-3">
 
-                                    <input type="text" class="form-control p-3" id="name"
-                                        placeholder="Name*">
+                                        <input type="text" class="form-control p-3" id="name" placeholder="Name*">
+                                    </div>
+
+                                    <div class="mb-3">
+
+                                        <input type="number" class="form-control p-3" id="contact"
+                                            placeholder="Contact No.*">
+                                    </div>
+
+                                    <div class="mb-3">
+
+                                        <input type="Email" class="form-control p-3" id="Email" placeholder="Email*">
+                                    </div>
+
+
+
+
+
+                                    <div class="mb-2 d-flex justify-content-start">
+
+                                        <select name="course" id="course" class="pe-5 p-2 ">
+                                            <option value="select">Select Course</option>
+                                            <option value="course1">course1</option>
+                                            <option value="course2">course2</option>
+                                            <option value="course3">course3</option>
+                                            <option value="course4">course4</option>
+                                            <option value="course5">course5</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="btn d-flex justify-content-start ps-0 gap-4">
+                                        <button class="btn btn-outline-warning ">Submit</button>
+
+                                    </div>
+
                                 </div>
-
-                                <div class="mb-3">
-
-                                    <input type="number" class="form-control p-3" id="contact"
-                                        placeholder="Contact No.*">
-                                </div>
-
-                                <div class="mb-3">
-
-                                    <input type="Email" class="form-control p-3" id="Email"
-                                        placeholder="Email*">
-                                </div>
-
-
-
-
-
-                                <div class="mb-2 d-flex justify-content-start">
-
-                                    <select name="course" id="course" class="pe-5 p-2 ">
-                                        <option value="select">Select Course</option>
-                                        <option value="course1">course1</option>
-                                        <option value="course2">course2</option>
-                                        <option value="course3">course3</option>
-                                        <option value="course4">course4</option>
-                                        <option value="course5">course5</option>
-
-                                    </select>
-                                </div>
-
-                                <div class="btn d-flex justify-content-start ps-0 gap-4">
-                                    <button class="btn btn-outline-warning ">Submit</button>
-
-                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-bs-dismiss="modal">Close</button>
-
-                        </div>
                     </div>
                 </div>
-            </div> 
 
 
 
@@ -656,7 +756,7 @@
             </div>
             <div id="About"></div>
         </div>
-       </section>
+    </section>
 
 
     <section class="container-fluid d-flex sponsers ">
@@ -695,7 +795,7 @@
 
             </div>
             <div>
-                <img src="Images/yamaha.webp"alt="YAMAHA" title="YAMAHA">
+                <img src="Images/yamaha.webp" alt="YAMAHA" title="YAMAHA">
 
             </div>
 
@@ -718,42 +818,111 @@
     </section>
 
 
-   
-   
-        
-    
+
+
+
+
 
     <footer class="sticky-footer foot">
         <div class="animated-icon">📞 9871112958</div>
         <div class="social-bar">
             <!-- Social Media Buttons -->
-            <a href="#" class="media-button" style="color: goldenrod; background-color: rgb(219, 167, 9);" href="#Home"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="media-button" style="color: goldenrod; background-color: rgb(219, 167, 9);"
+                href="#Home"><i class="fa-solid fa-house"></i></a>
             <hr>
             <a href="#" class="media-button"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="#" class="media-button"><i class="fa-brands fa-twitter"></i></a>
             <a href="#" class="media-button"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="media-button"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="#" class="media-button"><i class="fa-brands fa-square-github"></i></a>
-            
+
         </div>
     </footer>
 
-   
 
 
-    
+    <section class=" container-fluid testimonials" style="background-color: var(--blue);">
+
+
+        <div class="row slider owl-carousel ">
+            <div class="card col-auto">
+                <div class="img">
+                    <img src="Images\tgc.webp.jpg" alt="">
+                </div>
+                <div class="card_body text-center">
+                    <h1>heading</h1>
+                    <p>djfiuwefh efhfe weufs feu fefhef wefefef f ef f fw ef ef fwe f
+                    </p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-auto">
+                <div class="img">
+                    <img src="Images\tgc.webp.jpg" alt="">
+                </div>
+                <div class="card_body text-center">
+                    <h1>heading</h1>
+                    <p>djfiuwefh efhfe weufs feu fefhef wefefef f ef f fw ef ef fwe f </p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-auto">
+                <div class="img">
+                    <img src="Images\tgc.webp.jpg" alt="">
+                </div>
+                <div class="card_body text-center">
+                    <h1>heading</h1>
+                    <p>djfiuwefh efhfe weufs feu fefhef wefefef f ef f fw ef ef fwe f </p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script>
+        $(".TEST").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 500, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
 
 
 
 
 
 
+
+
+
+
+    <!-- Start:::CARD_CAROUSEL:::script link -->
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+
+    <!-- END:::CARD_CAROUSEL:::script link -->
 
 
 
 
     <!-- START:::script tag for bootstrap -->
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
