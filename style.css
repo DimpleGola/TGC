@@ -188,28 +188,6 @@ button {
 
 
 
-.grcl {
-    position: absolute;
-    top: 14%;
-    right: -2%;
-    width: 50px;
-    animation: upd2 2s alternate infinite;
-}
-
-.bycl {
-    position: absolute;
-    top: 9%;
-    left: -15%;
-    width: 200px;
-    animation: upd 2s alternate infinite;
-}
-
-.banner-img-bx img.grcl {
-    top: 12%;
-    right: 0%;
-    width: 80%;
-    left: 0%;
-}
 
 
 .toggle:hover nav {
@@ -396,6 +374,13 @@ element.style {
     background-color: white;
 }
 
+.modal-footer>button:hover {
+
+
+    background: hwb(232 1% 75%);
+    color: #ffffff;
+
+}
 
 .card {
 
