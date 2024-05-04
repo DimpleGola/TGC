@@ -797,7 +797,7 @@ element.style {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(247, 159, 31, 1);
+    background-color: blue;
     padding: 10px 10px;
     display: flex;
     justify-content: center;
